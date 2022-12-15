@@ -7,6 +7,9 @@
 img{
     max-width: 100%;
 }
+h2{
+    font-weight: unset;
+}
 
 
 
@@ -203,4 +206,22 @@ img{
     background-color: black;
     border-radius: 20px;
     margin-top: 15px;
+}
+
+/******* FINE HEADER ********/
+
+.main1{
+    margin-top: 100px;
+}
+.talk-space{
+    margin-top: 32px;
+    min-width: 80px;
+    font-size: 30px;
+    font-weight: normal;
+}
+.text-main1{
+    padding-top: 40px;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 2px;
 }
