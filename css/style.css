@@ -260,3 +260,21 @@ h2{
     font-size: 15px;
     text-align: center;
 }
+.stars-adv{
+    background-image: url(../img/stars.svg);
+}
+
+
+.section3{
+    background-color: rgb(35,39,42,255);
+    color: white;
+    padding-top: 55px;
+}
+.blue-big{
+    color: rgb(114,137,218,255);
+    font-size: 25px;
+    padding-bottom: 20px;
+}
+.ita-flag{
+    width: 20px;
+}
