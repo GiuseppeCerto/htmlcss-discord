@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: sans-serif;
+    font-family: Helvetica, sans-serif;
 }
 img{
     max-width: 100%;
@@ -210,18 +210,53 @@ h2{
 
 /******* FINE HEADER ********/
 
+
+.main-sec-1{
+    padding-bottom: 60px;
+}
 .main1{
     margin-top: 100px;
+    margin-bottom: 100px;
 }
 .talk-space{
     margin-top: 32px;
-    min-width: 80px;
     font-size: 30px;
-    font-weight: normal;
+    font-weight: bold;
 }
 .text-main1{
-    padding-top: 40px;
-    font-weight: 300;
+    padding-top: 25px;
+    font-weight: 400;
     font-size: 15px;
-    line-height: 2px;
+    line-height: 25px;
+}
+
+
+.main-sec-2{
+    background-color: rgb(246,246,246,255);
+    padding-bottom: 80px;
+    padding-top: 60px;
+}
+.find-space{
+    margin-top: 32px;
+    font-size: 30px;
+    font-weight: bold;
+}
+.text-main2{
+    padding-top: 25px;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 25px;
+}
+
+
+.col-main3{
+    text-align: center;
+}
+.col-main3 > h2{
+    margin-bottom: 30px;
+}
+.text-main3{
+    font-weight: 400;
+    font-size: 15px;
+    text-align: center;
 }
