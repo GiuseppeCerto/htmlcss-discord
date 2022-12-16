@@ -119,6 +119,8 @@ h2{
 .section3{
     background-color: rgb(35,39,42,255);
     color: white;
+    padding-top: 40px;
+    padding-bottom: 30px;
 }
 .section4{
     background-color: rgb(35,39,42,255);
