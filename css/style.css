@@ -116,14 +116,9 @@ h2{
     max-width: 800px;
     margin: 0 auto;
 }
-.section2{
-    padding: 50px;
-}
 .section3{
     background-color: rgb(35,39,42,255);
     color: white;
-    padding-top: 20px;
-    padding-bottom: 20px;
 }
 .section4{
     background-color: rgb(35,39,42,255);
@@ -244,30 +239,25 @@ h2{
 
 /******* INIZIO MAIN ********/
 
-
+.main-sec-2{
+    background-color: rgb(246,246,246,255);
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
 .main2{
     display: flex;
     flex-wrap: wrap;
     flex-direction: row-reverse;
 }
-.main-sec-1{
-    padding-bottom: 30px;
-}
 .main1{
     margin-top: 100px;
     margin-bottom: 100px;
 }
-
 .text-main1{
     padding-top: 25px;
     font-weight: 400;
     font-size: 15px;
     line-height: 25px;
-}
-.main-sec-2{
-    background-color: rgb(246,246,246,255);
-    padding-bottom: 100px;
-    padding-top: 100px;
 }
 .find-space{
     margin-top: 32px;
