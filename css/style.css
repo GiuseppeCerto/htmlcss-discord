@@ -1,23 +1,3 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Helvetica, sans-serif;
-}
-ul,
-il,
-menu{
-    list-style: none;
-}
-img{
-    max-width: 100%;
-}
-h2{
-    font-weight: unset;
-}
-
-
-
 /******
 .debug .container1{
     min-height: 50px;
@@ -27,14 +7,12 @@ h2{
     background-color:darkgoldenrod;
     padding: 5px;
 }
-
 .debug .head1{
     background-color: pink;
 }
 .debug .container2{
     padding: 20px;
 }
-
 .debug .head2{
     background-color: blue;
 }
@@ -102,6 +80,34 @@ h2{
 
 
 
+/********* DEBUG **********/
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Helvetica, sans-serif;
+}
+ul,
+li,
+menu{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+img{
+    max-width: 100%;
+}
+h2{
+    font-weight: unset;
+}
+
+
+/******* CONTAINER ********/
+
+
 .container1{
     max-width: 1000px;
     margin: 0 auto;
@@ -110,18 +116,25 @@ h2{
     max-width: 800px;
     margin: 0 auto;
 }
+.section2{
+    padding: 50px;
+}
+.section3{
+    background-color: rgb(35,39,42,255);
+    color: white;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.section4{
+    background-color: rgb(35,39,42,255);
+}
+
+/********* REGOLE FLEX *********/
+
+
 .row{
     display: flex;
     flex-wrap: wrap;
-}
-.header1{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.col-header{
-    flex-basis: 100%;
 }
 .row .col-main1{
     flex-basis: 60%;
@@ -135,7 +148,6 @@ h2{
 .row .col-main4{
     flex-basis: 16%;
     align-items: center;
-    
 }
 .row .col-foot1{
     flex-basis: calc((100% / 12)* 4)
@@ -143,25 +155,28 @@ h2{
 .row .col-foot2{
     flex-basis: calc((100% / 12) * 2)
 }
-
-.main2{
+.header1{
     display: flex;
-    flex-wrap: wrap;
-    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
 }
-
-
-
-
-
-
-
+.col-header{
+    flex-basis: 100%;
+}
 
 /********* HEADER **********/
 
+.nav-link{
+    display: flex;
+}
+.link-item > a{
+    text-decoration: none;
+    color: white;
+    padding: 0 30px;
+}
 .head1{
     background-color: #255ee9;
-    padding: 10px 0;
+    padding: 20px 0;
 }
 .col-link{
     flex-grow: 1;
@@ -173,10 +188,15 @@ h2{
 .col-link-row > span{
     margin: 0 20px;
 }
-.col-login > span{
+.col-login{
+    display: flex;
+}
+.col-login > a{
     padding: 5px 15px;
     background-color: white;
     border-radius: 20px;
+    text-decoration: none;
+    margin-bottom: 12px;
 }
 .head2{
     padding-top: 100px;
@@ -197,27 +217,41 @@ h2{
 .col-header{
     padding-bottom: 120px;
 }
+
 .mac-down{
     display: inline-block;
-    padding: 10px;
+    padding: 5px 15px;
     background-color: white;
     color: black;
     border-radius: 20px;
     margin-top: 15px;
+    text-decoration: none;
 }
 .open-dis{
     display: inline-block;
-    padding: 11px;
+    padding: 6px 15px;
     background-color: black;
+    color: white;
     border-radius: 20px;
     margin-top: 15px;
+    text-decoration: none;
 }
+
 
 /******* FINE HEADER ********/
 
 
+
+/******* INIZIO MAIN ********/
+
+
+.main2{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+}
 .main-sec-1{
-    padding-bottom: 60px;
+    padding-bottom: 30px;
 }
 .main1{
     margin-top: 100px;
@@ -230,12 +264,10 @@ h2{
     font-size: 15px;
     line-height: 25px;
 }
-
-
 .main-sec-2{
     background-color: rgb(246,246,246,255);
-    padding-bottom: 80px;
-    padding-top: 60px;
+    padding-bottom: 100px;
+    padding-top: 100px;
 }
 .find-space{
     margin-top: 32px;
@@ -253,8 +285,6 @@ h2{
     font-size: 15px;
     line-height: 25px;
 }
-
-
 .col-main3{
     text-align: center;
 }
@@ -272,27 +302,37 @@ h2{
     margin-left: 70px;
 }
 .text-main4{
-    margin: 30px;
+    padding-top: 30px;
+    padding-bottom: 5px;
     font-size: 30px;
     font-weight: bold;
-    padding: 15px;
-}
+    margin-bottom: 30px;
 
+}
 .macbutton{
+    display: flex;
+    justify-content: center;
+}
+.macbutton-link{
     padding: 10px;
     background-color: rgb(114,137,218,255);
     color: white;
     border-radius: 20px;
 }
+.wave-1{
+    margin-bottom: -5px;
+}
+.wave-2{
+    transform: rotate(180deg);
+}
+
 
 /******* FINE MAIN *********/
 
-.section3{
-    background-color: rgb(35,39,42,255);
-    color: white;
-    padding-top: 55px;
-    padding-bottom: 50px;
-}
+
+/******* INIZIO FOOTER *****/
+
+
 .ita-flag{
     width: 20px;
     display: inline-block;
@@ -300,47 +340,63 @@ h2{
 .ita-lang{
     display: inline-block;
 }
+.ita-color{
+    color: white;
+}
 .icon{
     margin-top:15px;
 }
-
 .icon1{
+    color: white;
+}
+.icon2{
     margin-left: 6px;
+    color: white;
+}
+.white{
+    color: white;
+}
+h4{
+    font-weight: normal;
 }
 .blue-big{
     color: rgb(114,137,218,255);
     font-size: 25px;
     padding-bottom: 20px;
-    font-weight: 600;
 }
 .blue{
     color: rgb(114,137,218,255);
+    font-size: ;
 }
-li{
-    margin-bottom: 10px;
+.link-foot > li{
+    display: block;
+    line-height: 30px;
 }
-.section4{
-    background-color: rgb(35,39,42,255);
-}
+
 .col-foot3{
-    margin-top: ;
     margin-bottom: 40px;
 }
 .rec-botton{
-    display: block;
+    display: flex;
+}
+.rec-botton-link{
     padding: 5px 15px;
     background-color: rgb(114,137,218,255);
     border-radius: 20px;
-    margin-top: 19px;
+    margin-top: 13px;
+    text-decoration: none;
+    color: white;
 }
 .logo-foot{
-    margin-top: 20px;
+    margin-top: 25px;
 }
-
 .foot2{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    border-top: 2px solid rgb(114,137,218,255);
+    border-top: 1px solid rgb(114,137,218,255);
 }  
+
+
+/******** FINE FOOTER ********/
